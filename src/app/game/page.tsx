@@ -202,7 +202,7 @@ export default function GamePage() {
             border: "1.5px solid #222",
             backdropFilter: "blur(2px)",
           }}
-          bordered={false}
+         variant="borderless"
         >
           <div style={{ textAlign: "center" }}>
             <Typography.Title
