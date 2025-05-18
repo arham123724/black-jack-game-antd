@@ -1,0 +1,55 @@
+.bg-immersive {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url('https://www.shutterstock.com/image-vector/poker-green-table-background-vector-600nw-2402279537.jpg') center center / cover no-repeat;
+  filter: blur(16px) brightness(0.5) saturate(1.2);
+}
+
+.card-visual {
+  display: inline-block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+  border: 2px solid #e0e0e0;
+  width: 64px;
+  height: 96px;
+  margin: 0 4px;
+  position: relative;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.5rem;
+  color: #222;
+  overflow: hidden;
+  transition: transform 0.15s;
+}
+.card-visual .corner {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.card-visual .corner.top {
+  top: 6px; left: 8px;
+}
+.card-visual .corner.bottom {
+  bottom: 6px; right: 8px;
+  transform: rotate(180deg);
+}
+.card-visual .suit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+}
+.card-visual.red {
+  color: #d7263d;
+}
+.card-visual.black {
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  .card-visual { width: 44px; height: 66px; font-size: 1.1rem; }
+}
