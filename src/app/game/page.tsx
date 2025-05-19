@@ -1,5 +1,5 @@
 "use client";
-import "./game-immersive.css";
+import "./game.css";
 import { Button, Typography, Card as AntCard } from "antd";
 import { useState } from "react";
 import { createDeck, Card } from "@/utils/blackjack";
@@ -193,8 +193,8 @@ export default function GamePage() {
       >
         <AntCard
           style={{
-            width: 480,
-            maxWidth: "98vw",
+            minWidth: 480,
+            // maxWidth: "98vw",
             background: "rgba(30,32,36,0.92)",
             borderRadius: 22,
             boxShadow: "0 12px 48px 0 rgba(31, 38, 135, 0.37)",
